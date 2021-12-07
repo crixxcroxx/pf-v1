@@ -63,7 +63,7 @@ const Grid = styled(dv).attrs(props => ({
   place-content: ${props => props.plaCont};
   place-items: ${props => props.plaItem};
 
-  gap: ${props => props.gap && `${props.gap}rem`};
+  gap: ${props => props.gap};
 
 `;
 
