@@ -11,36 +11,37 @@ const areasToString = (areas) => {
 }
 
 const dv = ({ className, children }) => (
-  <div className={`grid-parent ${className}`}>
+  <div className={className}>
     {children}
   </div>
 );
 
 const Grid = styled(dv).attrs(props => ({
   colCount: props.colCount || 12,
-  xsAreas: props.xsAreas || "",
+
   smAreas: props.smAreas || "",
   mdAreas: props.mdAreas || "",
   lgAreas: props.lgAreas || "",
-  xlAreas: props.xlAreas || "",
-  gap: props.gap || "",
-  brMin: breakpoint.size.[props.brMin] || breakpoint.size.sm,
-  brMax: props.brMax || "",
 
-  hasAreas: props.xsAreas || props.smAreas || props.mdAreas || props.lgAreas || props.xlAreas
+  jusCont: props.jusCont || "",
+  jusItem: props.jusItem || "",
+  aliCont: props.aliCont || "",
+  aliItem: props.aliItem || "",
+  plaItem: props.plaItem || "",
+  plaCont: props.plaCont || "",
+
+  gap: props.gap || "",
+
+  hasAreas: props.xsAreas || props.smAreas || props.mdAreas || props.lgAreas || props.xlAreas,
 }))`
   display: grid;
 
-  grid-template-columns: ${props => !props.hasAreas && `repeat(${props.colCount}, 1fr)`};
-
-  ${props => props.xsAreas &&
-    `grid-template-areas: ${`'${areasToString(props.xsAreas)}'`};`
-  }
+  grid-template-columns: ${props => !props.hasAreas &&
+    `repeat(${props.colCount}, 1fr)`
+  };
 
   ${props => props.smAreas && `
-    @media (min-width: ${breakpoint.size.xs}) {
-      grid-template-areas: ${`'${areasToString(props.smAreas)}'`};
-    }
+    grid-template-areas: ${`'${areasToString(props.smAreas)}'`};
   `}
 
   ${props => props.mdAreas &&
@@ -55,14 +56,15 @@ const Grid = styled(dv).attrs(props => ({
     }`
   }
 
-  ${props => props.xlAreas &&
-    `@media (min-width: ${breakpoint.size.lg}) {
-      grid-template-areas: ${`'${areasToString(props.xlAreas)}'`};
-    }`
-  }
+  justify-content: ${props => props.jusCont};
+  justify-items: ${props => props.jusItem};
+  align-content: ${props => props.aliCont};
+  align-items: ${props => props.aliItem};
+  place-content: ${props => props.plaCont};
+  place-items: ${props => props.plaItem};
 
   gap: ${props => props.gap && `${props.gap}rem`};
-  text-align: center;
+
 `;
 
 export default Grid

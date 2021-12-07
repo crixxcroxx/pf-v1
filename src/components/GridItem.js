@@ -1,22 +1,26 @@
 import styled from "styled-components";
 import breakpoint from "../helpers/breakpoints";
 
-const dv = ({ className, children, area }) => (
-  <div className={`${area} ${className}`}>
+const dv = ({ className, children }) => (
+  <div className={className}>
     {children}
   </div>
 );
 
 const GridItem = styled(dv).attrs(props => ({
   area: props.area || "",
+
   spanCol: props.spanCol || "",
   spanRow: props.spanRow || "",
   gridCol: props.gridCol || "",
   gridRow: props.gridRow || "",
-  brMin: breakpoint.size.[props.brMin] || breakpoint.size.sm,
-  brMax: props.brMax || "",
+
+  justSelf: props.justSelf || "",
+  alignSelf: props.alignSelf || "",
+  placeSelf: props.placeSelf || "",
+
+  hide: props.hide || "",
 }))`
-  place-items: center;
   grid-area: ${props => props.area};
 
   ${props => !props.area && `
@@ -24,6 +28,15 @@ const GridItem = styled(dv).attrs(props => ({
     grid-row: ${(props.spanRow && `span ${props.spanRow}`) || props.gridRow};
   `}
 
+  ${props => props.hide &&
+    `@media (max-width: ${breakpoint.size[props.hide]}) {
+      display: none;
+    }`
+  }
+
+  justify-self: ${props => props.justSelf};
+  align-self: ${props => props.alignSelf};
+  place-self: ${props => props.placeSelf};
 
 `;
 
