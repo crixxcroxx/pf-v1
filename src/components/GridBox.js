@@ -10,28 +10,8 @@ const areasToString = (areas) => {
 
 }
 
-const dv = ({ className, children }) => (
-  <div className={className}>
-    {children}
-  </div>
-);
-
-const Grid = styled(dv).attrs(props => ({
+const Grid = styled.div.attrs(props => ({
   colCount: props.colCount || 12,
-
-  smAreas: props.smAreas || "",
-  mdAreas: props.mdAreas || "",
-  lgAreas: props.lgAreas || "",
-
-  jusCont: props.jusCont || "",
-  jusItem: props.jusItem || "",
-  aliCont: props.aliCont || "",
-  aliItem: props.aliItem || "",
-  plaItem: props.plaItem || "",
-  plaCont: props.plaCont || "",
-
-  gap: props.gap || "",
-
   hasAreas: props.xsAreas || props.smAreas || props.mdAreas || props.lgAreas || props.xlAreas,
 }))`
   display: grid;
@@ -64,7 +44,6 @@ const Grid = styled(dv).attrs(props => ({
   place-items: ${props => props.plaItem};
 
   gap: ${props => props.gap};
-
 `;
 
 export default Grid

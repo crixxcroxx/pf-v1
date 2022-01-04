@@ -1,0 +1,11 @@
+.projects {
+  padding: 2rem;
+}
+
+.projects__content {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+
+  padding-block-start: 2rem;
+}

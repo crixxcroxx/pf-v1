@@ -1,26 +1,7 @@
 import styled from "styled-components";
 import breakpoint from "../helpers/breakpoints";
 
-const dv = ({ className, children }) => (
-  <div className={className}>
-    {children}
-  </div>
-);
-
-const GridItem = styled(dv).attrs(props => ({
-  area: props.area || "",
-
-  spanCol: props.spanCol || "",
-  spanRow: props.spanRow || "",
-  gridCol: props.gridCol || "",
-  gridRow: props.gridRow || "",
-
-  justSelf: props.justSelf || "",
-  alignSelf: props.alignSelf || "",
-  placeSelf: props.placeSelf || "",
-
-  hide: props.hide || "",
-}))`
+const GridItem = styled.div`
   grid-area: ${props => props.area};
 
   ${props => !props.area && `

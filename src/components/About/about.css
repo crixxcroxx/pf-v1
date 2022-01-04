@@ -1,0 +1,28 @@
+.about {
+  margin-block-start: -12.5rem;
+  padding: 5rem 2rem 0 2rem;
+  background-color: var(--grey-light);
+}
+
+.about .section-title {
+  text-align: right;
+}
+
+.about-content {
+  display: grid;
+  grid-auto-flow: row;
+  place-items: center;
+  gap: 2rem;
+
+  padding-block: 2rem;
+}
+
+.about__img {
+  max-width: 300px;
+  aspect-ratio: 1 / 1.2;
+  transform: rotate(-5deg);
+}
+
+.about__text {
+
+}
