@@ -1,1 +1,44 @@
- 
+header {
+  padding-inline: 2rem;
+}
+
+.hero {
+  display: grid;
+  align-items: center;
+  gap: 1rem;
+
+  padding-block: 1rem;
+  font-size: clamp(1.5rem, 5vw, 1.8rem);
+}
+
+.hero-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  margin-top: -1.1rem;
+  font-family: var(--ff-headers);
+  font-size: clamp(2rem, 10vw, 3rem);
+}
+
+@media (min-width: 600px) {
+  .hero {
+    grid-template-rows: 1fr 1fr 3rem;
+    padding-block-end: 2rem;
+  }
+
+  .hero img {
+    grid-column: 2 / 4;
+    grid-row: 1 / 4;
+    transform: rotate(180deg);
+    min-height: 75vh;
+  }
+
+  .hero-details {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    z-index: 5;
+  }
+}
+

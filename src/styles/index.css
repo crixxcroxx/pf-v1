@@ -1,23 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900&display=swap');
-
 :root {
-  --brown: #935A26;
-  --brown-light: #FAC696;
-  --red: #9F5258;
-  --red-light: #DD8174;
-  --pink: #EBD0C2;
+  --pink: #E8CABB;
   --blue: #203049;
-  --blue-light: #4e76af;
   --white: #EEEEEE;
-  --white-a: #EFEFEFAD;
-  --grey: #3F4950;
+  --white-100: #f4ece3;
+  --white-off: #eee6dd;
+  --black: #121212;
+  --black-100: #2e3436;
+  --grey: #6f6f6f;
   --grey-light: #CFCFCF;
-  --black: #0f0f0f;
 
-  --border-radius: 15px;
-  --border-radius-top: 15px 15px 0 0;
-  --border-radius-bot: 0 0 15px 15px;
-  --border-radius-sm: 10px;
+  --border-radius: 5px;
+  --border-radius-top: 5px 5px 0 0;
+  --border-radius-bot: 0 0 5px 5px;
+
+  --ff-main: 'Josefin Sans', sans-serif;
+  --ff-headers: 'Cardo', serif;
 }
 
 *, *::before, *::after {
@@ -28,7 +25,10 @@ body {
   margin: 0;
   line-height: 1.6;
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--ff-main);
+  color: var(--black-100);
+  background-color: var(--white-off);
+  background-image: url("../assets/img/texturedBG.png");
 }
 
 h1, h2, h3, p {
@@ -37,6 +37,11 @@ h1, h2, h3, p {
 
 a {
   text-decoration: none;
+  color: var(--blue);
+}
+
+a:hover:not(.btn):not(.section-btn):not(.icon-link) {
+  text-decoration: underline;
 }
 
 img {
@@ -52,6 +57,30 @@ img {
   gap: 1rem;
 }
 
-  .section-title {
-    font-size: 1.5rem;
-  }
+.section-title {
+  font-size: 2rem;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+}
+
+.btn, .section-btn {
+  padding: 0.1rem 1rem;
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--white);
+}
+
+.section-btn {
+  padding: 0.2rem 1rem;
+  border: 2px solid var(--blue);
+  background-color: transparent;
+}
+
+.btn:hover, .section-btn:hover {
+  color: var(--white);
+  background-color: var(--blue);
+}

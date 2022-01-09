@@ -1,24 +1,25 @@
 import Navbar from "../Navbar";
-import BurgerMenu from "../BurgerMenu";
-import FlexBox from "../FlexBox";
+
+import "./header.css";
 
 export default function Header() {
 
   return (
-    <header>
-      <Navbar>
-        <span>CM</span>
+    <header id="top">
+      <Navbar />
 
-        <FlexBox gap={1}>
-          <FlexBox hide="sm" gap={1}>
-            <div>Home</div>
-            <div>Contact</div>
-            <div>About</div>
-          </FlexBox>
+      <div className="hero">
+        <img
+          className="hero-img"
+          src="https://source.unsplash.com/vUwJ8uu_C1M"
+          alt="banner"
+        />
 
-          <BurgerMenu />
-        </FlexBox>
-      </Navbar>
+        <div className="hero-details">
+          <span>Cris Montajes</span>
+          <span className="hero-title">web developer</span>
+        </div>
+      </div>
     </header>
   );
 }

@@ -2,10 +2,24 @@
   padding: 2rem;
 }
 
-.projects__content {
+.projects-content {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
 
   padding-block-start: 2rem;
+}
+
+.more-btn {
+  display: block;
+  width: max-content;
+  margin: 3rem auto 1rem auto;
+}
+
+@media (min-width: 600px) {
+  .projects-content {
+    flex-direction: row;
+  }
 }

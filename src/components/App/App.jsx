@@ -1,25 +1,34 @@
-import Triangle from "../Triangle";
+import { useState, useEffect } from "react";
+
 import Header from "../Header";
 import About from "../About";
 import Projects from "../Projects";
-import Skills from "../Skills";
 import Footer from "../Footer";
 
 import "./app.css";
 
 export default function App() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = () => setIsScrolled(window.pageYOffset < 100 ? false : true)
+
+    return () => window.removeEventListener("onscroll", setIsScrolled(false), true)
+  }, []);
 
   return (
     <div className="app">
       <Header />
-      <Triangle />
       <About />
       <Projects />
-      <Skills />
-      <div className="triangle-rev-container">
-        <Triangle reverse />
-      </div>
       <Footer />
+      <>
+        {isScrolled &&
+          <a href="#top" className="back-to-top icon-link">
+            <i className="fas fa-arrow-up"></i>
+          </a>
+        }
+      </>
     </div>
   );
 }

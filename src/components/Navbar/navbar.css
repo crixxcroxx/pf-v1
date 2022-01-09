@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: 1rem;
+  font-size: 1.2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  width: max-content;
+  padding-inline: 0.15rem;
+  aspect-ratio: 1 / 1;
+  font-family: var(--ff-headers);
+  font-size: 1.2rem;
+  color: var(--white-off);
+  border-radius: 50%;
+  background-color: var(--blue);
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links > div {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links > div a {
+  color: var(--black-100);
+}

@@ -3,6 +3,18 @@
   margin-inline: auto;
 }
 
-.triangle-rev-container {
-  margin-block-start: -12.5rem;
+.back-to-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  top: 85vh;
+  right: max(8vw, 2rem);
+  width: max-content;
+  padding: 0.8rem;
+  aspect-ratio: 1 / 1;
+  color: var(--white);
+  border-radius: 50%;
+  background-color: var(--blue);
 }

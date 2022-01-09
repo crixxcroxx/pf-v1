@@ -1,13 +1,37 @@
 footer {
   display: flex;
-  justify-content: center;
-  gap: 1.5rem;
+  flex-direction: column;
+  gap: 1rem;
 
   padding: 2rem;
   font-size: 1.3rem;
   background-color: var(--black);
+
+  color: var(--grey-light);
 }
 
 footer a {
+  color: var(--white);
+}
+
+.contact > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  margin-block-start: 1rem;
+  font-size: 1.1rem;
+}
+
+
+footer .icon-link {
+  align-self: center;
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  color: var(--grey);
+}
+
+footer .icon-link:hover {
   color: var(--white);
 }
