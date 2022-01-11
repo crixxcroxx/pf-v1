@@ -11,6 +11,10 @@ header {
   font-size: clamp(1.5rem, 5vw, 1.8rem);
 }
 
+.hero img {
+  min-height: 65vh;
+}
+
 .hero-details {
   display: flex;
   flex-direction: column;
@@ -31,8 +35,8 @@ header {
   .hero img {
     grid-column: 2 / 4;
     grid-row: 1 / 4;
-    transform: rotate(180deg);
     min-height: 75vh;
+    transform: rotate(180deg);
   }
 
   .hero-details {
