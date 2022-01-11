@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/pf-v1/static/css/main.04ceb1a5.chunk.css",
+    "main.css": "/pf-v1/static/css/main.110ec1da.chunk.css",
     "main.js": "/pf-v1/static/js/main.ddf7069c.chunk.js",
     "main.js.map": "/pf-v1/static/js/main.ddf7069c.chunk.js.map",
     "runtime-main.js": "/pf-v1/static/js/runtime-main.7176b5be.js",
@@ -8,7 +8,7 @@
     "static/js/2.2317e8dc.chunk.js": "/pf-v1/static/js/2.2317e8dc.chunk.js",
     "static/js/2.2317e8dc.chunk.js.map": "/pf-v1/static/js/2.2317e8dc.chunk.js.map",
     "index.html": "/pf-v1/index.html",
-    "static/css/main.04ceb1a5.chunk.css.map": "/pf-v1/static/css/main.04ceb1a5.chunk.css.map",
+    "static/css/main.110ec1da.chunk.css.map": "/pf-v1/static/css/main.110ec1da.chunk.css.map",
     "static/js/2.2317e8dc.chunk.js.LICENSE.txt": "/pf-v1/static/js/2.2317e8dc.chunk.js.LICENSE.txt",
     "static/media/aboutImg.e1129a91.png": "/pf-v1/static/media/aboutImg.e1129a91.png",
     "static/media/cardNetflix.fabfd8af.png": "/pf-v1/static/media/cardNetflix.fabfd8af.png",
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.7176b5be.js",
     "static/js/2.2317e8dc.chunk.js",
-    "static/css/main.04ceb1a5.chunk.css",
+    "static/css/main.110ec1da.chunk.css",
     "static/js/main.ddf7069c.chunk.js"
   ]
 }
