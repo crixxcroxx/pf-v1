@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/pf-v1/static/css/main.87d6d5ff.chunk.css",
-    "main.js": "/pf-v1/static/js/main.0c8fa952.chunk.js",
-    "main.js.map": "/pf-v1/static/js/main.0c8fa952.chunk.js.map",
+    "main.js": "/pf-v1/static/js/main.a839433c.chunk.js",
+    "main.js.map": "/pf-v1/static/js/main.a839433c.chunk.js.map",
     "runtime-main.js": "/pf-v1/static/js/runtime-main.cfb12d8d.js",
     "runtime-main.js.map": "/pf-v1/static/js/runtime-main.cfb12d8d.js.map",
     "static/js/2.7c4299e7.chunk.js": "/pf-v1/static/js/2.7c4299e7.chunk.js",
@@ -12,12 +12,13 @@
     "static/js/2.7c4299e7.chunk.js.LICENSE.txt": "/pf-v1/static/js/2.7c4299e7.chunk.js.LICENSE.txt",
     "static/media/cardNetflix.fabfd8af.png": "/pf-v1/static/media/cardNetflix.fabfd8af.png",
     "static/media/cardPokemon.a44a8a46.png": "/pf-v1/static/media/cardPokemon.a44a8a46.png",
-    "static/media/cardWeather.9afdfad6.png": "/pf-v1/static/media/cardWeather.9afdfad6.png"
+    "static/media/cardWeather.9afdfad6.png": "/pf-v1/static/media/cardWeather.9afdfad6.png",
+    "static/media/xc.38d38ed9.png": "/pf-v1/static/media/xc.38d38ed9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.cfb12d8d.js",
     "static/js/2.7c4299e7.chunk.js",
     "static/css/main.87d6d5ff.chunk.css",
-    "static/js/main.0c8fa952.chunk.js"
+    "static/js/main.a839433c.chunk.js"
   ]
 }
