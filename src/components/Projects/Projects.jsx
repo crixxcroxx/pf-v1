@@ -7,7 +7,6 @@ import cardNetflix from "../../assets/img/cardNetflix.png";
 import "./projects.css";
 
 export default function Projects() {
-
   return (
     <div className="projects" id="projects">
       <h2 className="section-title">Projects</h2>
@@ -19,19 +18,40 @@ export default function Projects() {
           <p className="card__title">Pokemon</p>
 
           <div className="card__content">
-            <div className="card__content-stack">
+            {/* <div className="card__content-stack">
               <i title="HTML 5" className="fab fa-html5"></i>
               <i title="CSS 3" className="fab fa-css3"></i>
               <i title="ES6" className="fab fa-js-square"></i>
             </div>
 
             <p className="card__content-desc">
-              A classic Pokemon game clone with <a href="https://pokeapi.co/docs/v2" target="_blank" rel="noreferrer">Poke API</a>
-            </p>
+              A classic Pokemon game clone with{" "}
+              <a
+                href="https://pokeapi.co/docs/v2"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Poke API
+              </a>
+            </p> */}
 
             <div className="card__content-btn">
-              <a href="https://crixxcroxx.github.io/pokemon/" target="_blank" rel="noreferrer" className="btn">Live</a>
-              <a href="https://github.com/crixxcroxx/pokemon" target="_blank" rel="noreferrer" className="btn">Code</a>
+              <a
+                href="https://crixxcroxx.github.io/pokemon/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/crixxcroxx/pokemon"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Code
+              </a>
             </div>
           </div>
         </Card>
@@ -42,17 +62,23 @@ export default function Projects() {
           <p className="card__title">Weather App</p>
 
           <div className="card__content">
-            <div className="card__content-stack">
-              <i title="React" className="fab fa-react"></i>
-            </div>
-
-            <p className="card__content-desc">
-              Simple Weather App with <a href="https://openweathermap.org/" target="_blank" rel="noreferrer">Open Weather API</a>
-            </p>
-
             <div className="card__content-btn">
-              <a href="https://crixxcroxx.github.io/openWeather-app/" target="_blank" rel="noreferrer" className="btn">Live</a>
-              <a href="https://github.com/crixxcroxx/openWeather-app" target="_blank" rel="noreferrer" className="btn">Code</a>
+              <a
+                href="https://crixxcroxx.github.io/openWeather-app/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/crixxcroxx/openWeather-app"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Code
+              </a>
             </div>
           </div>
         </Card>
@@ -63,17 +89,23 @@ export default function Projects() {
           <p className="card__title">Netflix Clone</p>
 
           <div className="card__content">
-            <div className="card__content-stack">
-              <i title="React" className="fab fa-react"></i>
-            </div>
-
-            <p className="card__content-desc">
-              UI clone of Netflix with <a href="https://developers.themoviedb.org/3" target="_blank" rel="noreferrer">The Movie DB</a>
-            </p>
-
             <div className="card__content-btn">
-              <a href="https://crixxcroxx.github.io/netflix-clone/" target="_blank" rel="noreferrer" className="btn">Live</a>
-              <a href="https://github.com/crixxcroxx/netflix-clone" target="_blank" rel="noreferrer" className="btn">Code</a>
+              <a
+                href="https://crixxcroxx.github.io/netflix-clone/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/crixxcroxx/netflix-clone"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Code
+              </a>
             </div>
           </div>
         </Card>

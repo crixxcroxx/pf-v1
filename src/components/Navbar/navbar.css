@@ -5,6 +5,7 @@ nav {
 
   padding-block: 1rem;
   font-size: 1.2rem;
+  z-index: 99;
 }
 
 .logo {
@@ -22,7 +23,7 @@ nav {
 }
 
 .nav-links {
-  display: flex;
+  display: none;
 }
 
 .nav-links > div {
@@ -32,4 +33,58 @@ nav {
 
 .nav-links > div a {
   color: var(--black-100);
+}
+
+.nav-sm-burger {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  width: 30px;
+  aspect-ratio: 1 / 1;
+}
+
+.nav-sm-burger > div {
+  height: 5px;
+  width: 100%;
+  background-color: var(--blue);
+  cursor: pointer;
+}
+
+.nav-sm-side {
+  position: absolute;
+  inset: 0 0 0 10rem;
+  padding: 1.5rem;
+  z-index: 99;
+  transform: translateX(calc(100vw - 10rem));
+  transition: 500ms ease-in-out;
+  background-color: var(--white-100);
+}
+
+.nav-sm-side button {
+  float: right;
+  font-size: 1.5rem;
+  color: var(--black-100);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.nav-sm-side > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-block-start: 3rem;
+}
+
+@media (min-width: 600px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .nav-sm-burger,
+  .nav-sm-side {
+    display: none;
+  }
 }

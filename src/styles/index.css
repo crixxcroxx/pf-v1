@@ -1,29 +1,32 @@
 :root {
-  --pink: #E8CABB;
+  --brown: #d7c3ad;
   --blue: #203049;
-  --white: #EEEEEE;
+  --white: #eeeeee;
   --white-100: #f4ece3;
   --white-off: #eee6dd;
   --black: #121212;
   --black-100: #2e3436;
   --grey: #6f6f6f;
-  --grey-light: #CFCFCF;
+  --grey-light: #cfcfcf;
 
   --border-radius: 5px;
   --border-radius-top: 5px 5px 0 0;
   --border-radius-bot: 0 0 5px 5px;
 
-  --ff-main: 'Josefin Sans', sans-serif;
-  --ff-headers: 'Cardo', serif;
+  --ff-main: "Josefin Sans", sans-serif;
+  --ff-headers: "Cardo", serif;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
   line-height: 1.6;
+  overflow-x: hidden;
   font-size: 16px;
   font-family: var(--ff-main);
   color: var(--black-100);
@@ -31,7 +34,10 @@ body {
   background-image: url("../assets/img/texturedBG.png");
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
   margin: 0;
 }
 
@@ -65,7 +71,8 @@ img {
   font-size: 1.5rem;
 }
 
-.btn, .section-btn {
+.btn,
+.section-btn {
   padding: 0.1rem 1rem;
   color: var(--blue);
   font-weight: 600;
@@ -80,7 +87,8 @@ img {
   background-color: transparent;
 }
 
-.btn:hover, .section-btn:hover {
+.btn:hover,
+.section-btn:hover {
   color: var(--white);
   background-color: var(--blue);
 }

@@ -12,7 +12,7 @@ header {
 }
 
 .hero img {
-  min-height: 65vh;
+  min-height: 50vh;
 }
 
 .hero-details {
@@ -45,4 +45,3 @@ header {
     z-index: 5;
   }
 }
-
