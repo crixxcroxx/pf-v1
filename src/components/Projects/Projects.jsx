@@ -3,6 +3,7 @@ import Card from "../Card";
 import cardPokemon from "../../assets/img/cardPokemon.png";
 import cardWeather from "../../assets/img/cardWeather.png";
 import cardNetflix from "../../assets/img/cardNetflix.png";
+import cardCrypto from "../../assets/img/cardCrypto.png";
 
 import "./projects.css";
 
@@ -100,6 +101,33 @@ export default function Projects() {
               </a>
               <a
                 href="https://github.com/crixxcroxx/netflix-clone"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Code
+              </a>
+            </div>
+          </div>
+        </Card>
+
+        <Card>
+          <img className="card__img" src={cardCrypto} alt="User" />
+
+          <p className="card__title">Crypto Tracker</p>
+
+          <div className="card__content">
+            <div className="card__content-btn">
+              <a
+                href="https://crypto-tracker-6f75e.web.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="btn"
+              >
+                Live
+              </a>
+              <a
+                href="https://github.com/crixxcroxx/crypto-tracker_v2"
                 target="_blank"
                 rel="noreferrer"
                 className="btn"
